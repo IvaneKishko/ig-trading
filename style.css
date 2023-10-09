@@ -1,0 +1,238 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 5%;
+  background: #ffc107; /* semi-transparent black */
+}
+
+.logo {
+  max-height: 60px;
+  width: auto;
+}
+
+.navlinks {
+  display: flex;
+  gap: 20px;
+}
+
+.navlinks a {
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.navlinks a:hover {
+  opacity: 0.7;
+}
+
+/* Main Element Styles */
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 400px;
+  color: white;
+  text-align: left;
+  position: relative; /* This is just to stack the .content on top of the video */
+}
+
+/* Video Background Styles */
+.video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.video-background video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Content Styles */
+.content {
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 2rem;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 2em;
+  text-align: center;
+}
+
+main p {
+  font-weight: 300;
+  font-size: 1em;
+  max-width: 800px;
+  text-align: left;
+  margin-top: 20px;
+  width: 50%;
+}
+
+/* SECTION */
+
+section {
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+section h2 {
+  font-size: 35px;
+  font-weight: 300;
+}
+
+.section-content {
+  display: flex;
+  justify-content: space-around;
+}
+
+.content-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 20%;
+}
+.content-card p {
+  text-align: center;
+}
+
+.content-card img {
+  border-radius: 50%;
+}
+
+.learn-button {
+  background-color: #ffc107;
+  color: black;
+  border: none;
+  padding: 0.7rem 1.25rem;
+  max-width: 7rem;
+}
+
+/* GREY SECTION */
+
+.grey-section {
+  background-color: #474747;
+  color: white;
+  padding: 3rem 4rem;
+}
+
+.horizontal-flex {
+  display: flex;
+  align-items: flex-start;
+  gap: 3rem;
+}
+
+.horizontal-flex img {
+  width: 50%;
+}
+
+.horizontal-flex div {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* FOOTER */
+.footer {
+  background-color: #ffc107;
+  padding: 1rem 2rem;
+}
+
+.footer__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5rem;
+  color: var(--secondary-color);
+}
+
+.footer__col{
+    text-align: left;
+}
+
+.footer__col h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.footer__col h3 span {
+  color: black;
+}
+
+.footer__col p {
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.footer__col p:hover {
+  color: var(--primary-color);
+}
+
+.footer__col p span {
+  font-weight: 600;
+}
+
+.footer__col h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.footer__bar {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 0.5rem;
+  text-align: center;
+  font-size: 0.8rem;
+  color: var(--secondary-color);
+  border-top: 1px solid var(--text-light);
+}
+
+footer img{
+    height: 50px;
+}
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  /* breakpoint for tablets and mobile devices */
+  header {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .navlinks {
+    gap: 10px;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  p {
+    font-size: 0.9em;
+    padding: 0 10px;
+  }
+}
