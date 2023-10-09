@@ -121,7 +121,7 @@ section h2 {
 }
 
 .content-card img {
-  border-radius: 50%;
+  height: 200px;
 }
 
 .learn-button {
