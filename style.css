@@ -168,10 +168,8 @@ section h2 {
 }
 
 .footer__container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 4rem;
-  color: var(--secondary-color);
+  display: flex;
+  flex-direction: column;
 }
 
 .footer__col {
