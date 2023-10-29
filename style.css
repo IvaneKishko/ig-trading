@@ -14,7 +14,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 20px 5%;
-  background: #ffc107; /* semi-transparent black */
+  background: #000080; /* semi-transparent black */
 }
 
 .logo {
@@ -30,7 +30,7 @@ header {
 .navlinks a {
   text-decoration: none;
   transition: 0.3s;
-  color: black;
+  color: white;
   font-size: 20px;
 }
 
@@ -73,6 +73,7 @@ main {
   flex-direction: column;
   align-items: flex-start;
   margin-left: 2rem;
+  color: black;
 }
 
 h1 {
@@ -108,12 +109,15 @@ section h2 {
 .section-content {
   display: flex;
   justify-content: space-around;
+  gap: 100px;
+  flex-wrap: wrap;
 }
 
 .content-card {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
   width: 20%;
 }
 .content-card p {
@@ -125,8 +129,8 @@ section h2 {
 }
 
 .learn-button {
-  background-color: #ffc107;
-  color: black;
+  background-color: #000080;
+  color: white;
   border: none;
   padding: 0.7rem 1.25rem;
   max-width: 7rem;
@@ -158,8 +162,9 @@ section h2 {
 
 /* FOOTER */
 .footer {
-  background-color: #ffc107;
+  background-color: #000080;
   padding: 1rem 2rem;
+  color: white;
 }
 
 .footer__container {
